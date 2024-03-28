@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eecc00"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Event Information"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:background="#eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Name"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelPlace"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Place"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelDescription"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Description"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:lines="5"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelCapacity"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Capacity"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etCapacity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelBudget"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Budget"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etBudget"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelPhone"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <TextView
+                android:id="@+id/labelDateTime"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Event Date/Time"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/etDateTime"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/labelInOut"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Event Type"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/rbIndoor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Indoor"/>
+                <RadioButton
+                    android:id="@+id/rbOutdoor"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Outdoor"/>
+                <RadioButton
+                    android:id="@+id/rbOnline"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Online"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+<!--        <TextView-->
+<!--            android:id="@+id/btnErrorMsg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:textColor="#ff0000"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Error messages will be here"/>-->
+
+    </LinearLayout>
+
+
+
+    <!--    Button of the bottom-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#00aaff">
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Cancel"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Share"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Save"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--Event application-->
+    <!--
+    Name                    : Textfield
+    place                   : Textfield
+    Date/Time               : DateTime picker
+    Description             : Multi-line text
+    Capacity                : Textfield Numeric
+    Type: Indoor/Outdoor    : RadioButton
+    Budget                  : TextField-Numeric
+    Contact-Email:          : TextField-Email
+    Contact-Phone:          : TextField-Phonenumber
+    -->
+
+
+
+<!--
+Name                        : TextField
+Place                       : TextField
+Date/Time                   : DateTime picker
+Description                 : Multi-line text
+Capacity                    : TextField Numeric
+Type: Indoor/Outdoor        : Radio Button
+Budget                      : TextField Numeric
+Contact-Email               : TextField Email
+Contact Phone               : TextField Phonenumber
+-->

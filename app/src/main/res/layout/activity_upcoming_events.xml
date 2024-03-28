@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eecc00"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Upcoming Events"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:background="#eeeeee">
+
+            <ListView
+                android:id="@+id/lvEvents"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+    <!--    Button of the bottom-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#00aaff">
+
+        <TextView
+            android:id="@+id/btnCreateNew"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Create New"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/btnSync"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Sync"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/btnHistory"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Share"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Exit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <!--Event application-->
+    <!--
+    Name                    : Textfield
+    place                   : Textfield
+    Date/Time               : DateTime picker
+    Description             : Multi-line text
+    Capacity                : Textfield Numeric
+    Type: Indoor/Outdoor    : RadioButton
+    Budget                  : TextField-Numeric
+    Contact-Email:          : TextField-Email
+    Contact-Phone:          : TextField-Phonenumber
+    -->
+
+
+
+<!--
+Name                        : TextField
+Place                       : TextField
+Date/Time                   : DateTime picker
+Description                 : Multi-line text
+Capacity                    : TextField Numeric
+Type: Indoor/Outdoor        : Radio Button
+Budget                      : TextField Numeric
+Contact-Email               : TextField Email
+Contact Phone               : TextField Phonenumber
+-->

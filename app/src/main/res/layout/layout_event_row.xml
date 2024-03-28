@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="2"
+android:orientation="horizontal">
+<TextView
+    android:id="@+id/tvEventName"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:text="At Event Place Name"
+    android:textSize="14dp"
+    android:textStyle="bold"/>
+<TextView
+    android:id="@+id/tvEventDateTime"
+    android:layout_width="140dp"
+    android:layout_height="match_parent"
+    android:text="09:00 AM, 13 Jul, 2021"
+    android:textSize="12dp"
+    android:gravity="right"/>
+</LinearLayout>
+
+<TextView
+android:id="@+id/tvEventPlaceName"
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1"
+android:layout_marginBottom="8dp"
+android:text="At Event Place Name"
+android:textSize="12dp"/>
+    </LinearLayout>
+
+    <!--Event application-->
+    <!--
+    Name                    : Textfield
+    place                   : Textfield
+    Date/Time               : DateTime picker
+    Description             : Multi-line text
+    Capacity                : Textfield Numeric
+    Type: Indoor/Outdoor    : RadioButton
+    Budget                  : TextField-Numeric
+    Contact-Email:          : TextField-Email
+    Contact-Phone:          : TextField-Phonenumber
+    -->
+
+
+
+<!--
+Name                        : TextField
+Place                       : TextField
+Date/Time                   : DateTime picker
+Description                 : Multi-line text
+Capacity                    : TextField Numeric
+Type: Indoor/Outdoor        : Radio Button
+Budget                      : TextField Numeric
+Contact-Email               : TextField Email
+Contact Phone               : TextField Phonenumber
+-->
